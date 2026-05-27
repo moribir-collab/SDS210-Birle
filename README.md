@@ -1,32 +1,36 @@
-# SDS210-Birle
-Analysis of vegetation and surface-related raster values in Zurich using Landsat data from 1985 to 2024 for the Project
+# Urban Heat and Vegetation Change in Zurich, 1985–2024
 
+SDS210 Programming with Spatial Data — Project 3: Urban Heat
 
-## Project Overview
+## Repository contents
 
-This project investigates how surface-related raster values and vegetation developed in Zurich between 1985 and 2024. The analysis uses Landsat composite raster data and focuses on the relationship between Band 1 values and the Normalized Difference Vegetation Index (NDVI).
-
-The project was created for the course **SDS210 Programming with Spatial Data**.
-
-## Research Question
-
-How have surface-related Band 1 values and vegetation developed in Zurich between 1985 and 2024, and is there a measurable relationship between them across Zurich’s urban districts?
+- `urban_heat_zurich.ipynb` — fully executed Jupyter Notebook
+- `Report_Birle_SDS210.pdf` — project report
+- `README.md` — this file
 
 ## Data
 
-The analysis is based on 14 Landsat composite raster files for Zurich. Each raster contains 7 bands and covers one year between 1985 and 2024.
+The 14 Landsat composite files for Zurich (1985–2024) are available on the
+course server under `course/sds210/data/projects/project_3/`. Each file is
+named `LandsatComposite_Zurich_YYYY.tif` and contains 7 spectral bands.
 
-Example files:
+## How to run (Google Colab)
 
-- LandsatComposite_Zurich_1985.tif
-- LandsatComposite_Zurich_1988.tif
-- LandsatComposite_Zurich_1991.tif
+1. Download all `.tif` files from the course server.
+2. Create a folder named `Landsat_Zurich` in your Google Drive and place
+   all `.tif` files there.
+3. Open `urban_heat_zurich.ipynb` in Google Colab.
+4. Run all cells. The notebook copies the data automatically.
 
-The raster files are not included in this repository if they exceed GitHub’s file size limits. The expected folder structure is:
+## How to run (local)
 
-```text
-Landsat_Zurich/
-├── LandsatComposite_Zurich_1985.tif
-├── LandsatComposite_Zurich_1988.tif
-├── LandsatComposite_Zurich_1991.tif
-└── ...
+pip install rasterio numpy pandas matplotlib geopandas osmnx
+urban-heat-zurich/
+├── urban_heat_zurich.ipynb
+├── README.md
+└── data/
+    ├── LandsatComposite_Zurich_1985.tif
+    ├── LandsatComposite_Zurich_1988.tif
+    └── ...
+
+
