@@ -29,8 +29,8 @@ urban-heat-zurich/
 ├── urban_heat_zurich.ipynb
 ├── README.md
 └── data/
-    ├── LandsatComposite_Zurich_1985.tif
-    ├── LandsatComposite_Zurich_1988.tif
-    └── ...
+   ├── LandsatComposite_Zurich_1985.tif
+   ├── LandsatComposite_Zurich_1988.tif
+   └── ...
 
 
